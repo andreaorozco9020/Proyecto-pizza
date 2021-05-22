@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*{
+ margin: 0%;
+ padding: 0%;
+ box-sizing: border-box;   
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+:root {
+--primary-color: #222222;
+--secundary-color:#FC200C;
+--tercer-color:#E5E5E5;
+}
+
+header{
+    height: 100px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    
+ 
+}
+
+.contenedora-header1{
+    display: flex;
+    gap: 13px;
+}
+
+.caja-hija-pizza{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.caja-hija-front{
+    display: flex;
+    align-items: center;
+}
+
+
+h1{
+    color: var(--tercer-color);
+    font-size: 24px;
+    
+    
+ }
+ .verde{
+     color: #39B24A;
+ }
+ .blanco{
+     color: var(--tercer-color);
+ }
+
+ .rojo{
+     color: var(--secundary-color);
+ }
+
+ nav{
+     display: flex;
+     align-items: center;
+     margin-right: 20px;
+     
+     
+     
+    
+ }
+ nav ul{
+     list-style: none;
+     gap: 13px;
+     display: flex;
+   
+     
+ }
+ nav ul li {
+     display: inline;
+     align-items: center;
+     
+     
+
+ }
+ a{
+     text-decoration: none;
+     color: var(--tercer-color);
+ }
+
+ main{
+     display: flex;
+     padding-top: 40px;
+     padding-bottom: 40px;
+     justify-content: space-around;
+ }
+     
+ .contenedor-pizza{
+     background-image: url('/img/delivery.jpg');
+     width:600px;
+     height: 450px;
+     margin-left: 20px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-top: 80px;
+ }
+
+ .letras{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+ }
+ h2{
+     font-size: 24px;
+ }
+
+ .contenedor-ingredientes{
+     background-color: white;
+     width: 600px;
+     height: 450px;
+     margin-top: 80px;
+    
+ }
+
+ .podio{
+  
+     margin-top: 20px;
+     height: 40px;
+    text-align:center;
+ }
+.top-comidas{
+    display: flex;
+    height: 230px;
+    background-color:white;
+    margin-top: 30px;
+    justify-content: space-around;
+
+}
+.top5{
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    
+}
+.imagen-pizzas-varias{
+    background-image: url('/img/PizzaFalling.jpg');
+    width: 130px;
+    height: 160px;
+    background-size: cover;
+    margin-top: 50px;
+    position: relative;
+    background-position: center;
+
+}
+h3 {
+    font-size: 20px;
+}
+
+.top5 ol li{
+    font-size: 16px;
+}
+
+/*Aqui  termina el main*/
+
+/*Aqui empieza el footer*/
+footer{
+    height: 150px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.letras-2{
+    width: 40%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+   
+
+}
+
+.letras-2 ul li{
+    list-style: none;
+    color: var(--tercer-color);   
+
+}
+
+.caja-hija-front2{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+/*Diseño adaptativo*/
+
+@media screen and (max-width: 720px){
+    nav ul li{
+        display: none;
+      }
+         nav ul::before{
+           color: var(--white);
+           font-size: 1.8rem;
+           font-family: "Font Awesome 5 Free";
+           font-weight: 900;
+           content: "\f0c9";
+           color: var(--tercer-color);
+
+        }
+
+
+    main{
+      flex-direction: column;
+      margin-bottom: 100px;
+    
+    }
+
+    .contenedor-pizza{
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+
+    .contenedor-ingredientes{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+
+    }
+/*Diseño adaptativo*/
+    @media screen and (max-width: 420px){
+
+        
+    .contenedor-pizza{
+        width: 400px;      
+        background-position: center;
+       
+    }
+
+    .contenedor-ingredientes{
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        background-position: center;
+       
+    }
+
+
+ }
+
+
+
+   
+
